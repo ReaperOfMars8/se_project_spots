@@ -29,6 +29,7 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 420px;
+  color: #212121;
 }
 
 .profile__description {
@@ -81,9 +82,6 @@
   margin-top: auto;
   height: 52px;
   width: 149px;
-  line-height: 16px;
-  font-style: 16px;
-  font-weight: 500;
   color: #fcf5e5;
   background-color: #212121;
 }
