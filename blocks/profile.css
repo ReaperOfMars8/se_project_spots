@@ -22,28 +22,26 @@
   font-weight: 500;
   font-size: 32px;
   line-height: 32px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-overflow: ellipsis;
   overflow: hidden;
-  line-clamp: 3;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 420px;
 }
 
-.profile__discription {
+.profile__description {
   margin: 0;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: #212121;
   opacity: 70%;
   text-overflow: ellipsis;
   overflow: hidden;
-  line-clamp: 3;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -55,14 +53,14 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   display: flex;
   align-items: center;
   gap: 8px;
   margin-top: auto;
   margin-right: auto;
   border: none;
-  background-color: #fcf5e5;
+  background-color: transparent;
   color: #212121;
   opacity: 70%;
 }
@@ -72,7 +70,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,21 +84,22 @@
   line-height: 16px;
   font-style: 16px;
   font-weight: 500;
-  color: #fff;
+  color: #fcf5e5;
   background-color: #212121;
 }
 
 .profile__edit-btn:hover {
   cursor: pointer;
+  opacity: 100%;
 }
 
 .profile__add-btn:hover {
   cursor: pointer;
+  opacity: 80%;
 }
 
 @media screen and (max-width: 627px) {
   .profile {
-    display: flex;
     flex-direction: column;
     max-width: 288px;
     align-items: center;
@@ -109,18 +108,19 @@
   }
 
   .profile__avatar {
-    margin-right: 0 0 12px;
+    margin-right: 12px;
     height: 80px;
     width: 80px;
   }
 
   .profile__name {
-    font-style: 20px;
+    font-size: 20px;
     margin: 0 0 6px;
     max-width: 288px;
+    line-height: 20px;
   }
 
-  .profile__discription {
+  .profile__description {
     margin: 0 0 32px;
     max-width: 288px;
   }

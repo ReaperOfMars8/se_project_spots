@@ -16,4 +16,4 @@ This website is to share and view images posted by different people showing off 
 
 This website is deployed on GitHub
 
-- Deployment Link:
+- Deployment Link:(https://reaperofmars8.github.io/se_project_spots/)

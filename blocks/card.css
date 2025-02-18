@@ -10,9 +10,13 @@
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 20px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   line-height: 24px;
   margin: 12px 0 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 288px;
 }
 
 .card__content {
@@ -27,21 +31,24 @@
   width: 23px;
   border: none;
   background-color: transparent;
-  opacity: 40%;
-  filter: brightness(0) saturate(100%) invert(13%) sepia(4%) saturate(0%)
-    hue-rotate(178deg) brightness(89%) contrast(88%);
+  opacity: 0.4;
   margin-top: auto;
   cursor: pointer;
-  opacity: 1;
+  opacity: 0.4;
 }
 
 .card__like-btn:hover {
-  opacity: 0.4;
+  opacity: 1;
 }
 
 @media screen and (max-width: 627px) {
   .card__image {
     height: 288px;
     max-width: 288px;
+  }
+
+  .card__title {
+    font-size: 16px;
+    line-height: 16px;
   }
 }

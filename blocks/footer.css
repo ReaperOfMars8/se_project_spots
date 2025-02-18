@@ -9,14 +9,10 @@
 .footer__copyright {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 400;
-  width: 104px;
-  height: 16px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   font-size: 16px;
   opacity: 70%;
   line-height: 16px;
   text-align: center;
   margin: 0;
-  overflow: hidden;
-  white-space: nowrap;
 }
