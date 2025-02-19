@@ -17,5 +17,5 @@ This website is to share and view images posted by different people showing off 
 This website is deployed on GitHub
 
 - Deployment Link: (https://reaperofmars8.github.io/se_project_spots/)
-- Video: (https://drive.google.com/file/d/1Gh7rLF8SocmZlpOZgogDhr9shu2vbvLR/view?usp=sharing)
-  g
+
+- Video: (https://drive.google.com/file/d/1HjNVC65oJFNrhiYZZf-xdd3x6DP5WUeZ/view?usp=sharing)

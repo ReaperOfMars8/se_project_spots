@@ -5,13 +5,13 @@
 }
 
 .profile__avatar {
-  margin-right: 20px;
   border-radius: 8px;
   height: 190px;
   width: 190px;
 }
 
 .profile__column {
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
 }
