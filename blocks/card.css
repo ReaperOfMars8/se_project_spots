@@ -26,6 +26,11 @@
   justify-content: space-between;
 }
 
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
 .card__like-btn {
   background-image: url(../images/like.svg);
   height: 20px;
