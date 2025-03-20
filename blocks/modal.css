@@ -145,6 +145,7 @@
   background-color: #212121;
   color: #fcf5e5;
   border-radius: 8px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 .modal__submit-btn:hover {
@@ -178,11 +179,15 @@
   }
 
   .modal__close-btn {
-    top: 12px;
+    top: -38px;
     right: 12px;
   }
 
   .modal__label {
     margin-bottom: 24px;
+  }
+
+  .modal__image {
+    max-width: 288px;
   }
 }
