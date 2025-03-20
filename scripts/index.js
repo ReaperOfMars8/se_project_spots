@@ -85,12 +85,12 @@ function getCardElement(data) {
   return cardElement;
 }
 
-function openModal(Modal) {
-  Modal.classList.add("modal_opened");
+function openModal(modal) {
+  modal.classList.add("modal_opened");
 }
 
-function closeModal(Modal) {
-  Modal.classList.remove("modal_opened");
+function closeModal(modal) {
+  modal.classList.remove("modal_opened");
 }
 
 function handleEditFormSubmit(evt) {
