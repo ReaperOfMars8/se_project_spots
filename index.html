@@ -65,12 +65,12 @@
             <img src="./images/close.svg" alt="close icon" />
           </button>
           <h2 class="modal__title">Edit profile</h2>
-          <form name="edit-profile" class="modal__form">
+          <form id="edit-profile-form" class="modal__form" novalidate>
             <label for="profile-name-input" class="modal__label">
               Name
               <input
                 id="profile-name-input"
-                class="modal__imput"
+                class="modal__input"
                 name="name"
                 placeholder="Type your name"
                 type="text"
@@ -78,15 +78,16 @@
                 maxlength="40"
                 required
               />
-              <span id="profile-name-input-error" class="modal__error-active"
-                >Please fill out this field.</span
-              >
+              <span
+                id="profile-name-input-error"
+                class="modal__error-active"
+              ></span>
             </label>
             <label for="profile-description-input" class="modal__label">
               Description
               <input
                 id="profile-description-input"
-                class="modal__imput"
+                class="modal__input"
                 name="description"
                 placeholder="Discribe yourself"
                 type="text"
@@ -97,11 +98,14 @@
               <span
                 id="profile-description-input-error"
                 class="modal__error-active"
-                >Please lengthen this text to 2 characters or more (you are
-                currently usina 1 character).</span
-              >
+              ></span>
             </label>
-            <button type="submit" class="modal__submit-btn">Save</button>
+            <button
+              type="submit"
+              class="modal__submit-btn modal__button_disabled"
+            >
+              Save
+            </button>
           </form>
         </div>
       </div>
@@ -113,26 +117,24 @@
           <img src="./images/close.svg" alt="close icon" />
         </button>
         <h2 class="modal__title">New Post</h2>
-        <form class="modal__form" id="card-form">
+        <form class="modal__form" id="card-form" novalidate>
           <label for="card-link-input" class="modal__label">
             Image Link
             <input
               id="card-link-input"
-              class="modal__imput"
+              class="modal__input"
               name="link"
               placeholder="Paste a link to the picture"
               type="url"
               required
             />
-            <span id="card-link-input-error" class="modal__error-active"
-              >Please enter a URL.</span
-            >
+            <span id="card-link-input-error" class="modal__error-active"></span>
           </label>
           <label for="card-name-input" class="modal__label">
             Caption
             <input
               id="card-name-input"
-              class="modal__imput"
+              class="modal__input"
               name="name"
               placeholder="Type your caption"
               type="text"
@@ -140,11 +142,14 @@
               maxlength="30"
               required
             />
-            <span id="card-name-input-error" class="modal__error-active"
-              >Please fill out this field.</span
-            >
+            <span id="card-name-input-error" class="modal__error-active"></span>
           </label>
-          <button type="submit" class="modal__submit-btn">Save</button>
+          <button
+            type="submit"
+            class="modal__submit-btn modal__button_disabled"
+          >
+            Save
+          </button>
         </form>
       </div>
     </div>
