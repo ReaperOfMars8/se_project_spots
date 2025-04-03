@@ -89,12 +89,32 @@ function getCardElement(data) {
   return cardElement;
 }
 
+function closeOverlay(evt) {
+  const openModal = document.querySelector(".modal_opened"); //remember to use dot here to reference that modal_opened is a class name
+  if (evt.target.classList.contains("modal")) {
+    closeModal(openModal);
+  }
+}
+
+function handleEsc(evt) {
+  if (evt.key === "Escape") {
+    const openModal = document.querySelector(".modal_opened"); //remember to use dot here to reference that modal_opened is a class name
+    if (openModal) {
+      closeModal(openModal);
+    }
+  }
+}
+
 function openModal(modal) {
   modal.classList.add("modal_opened");
+  modal.addEventListener("click", closeOverlay);
+  document.addEventListener("keydown", handleEsc);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
+  modal.removeEventListener("click", closeOverlay);
+  document.removeEventListener("keydown", handleEsc);
 }
 
 function handleEditFormSubmit(evt) {
@@ -113,8 +133,8 @@ function handleAddCardSubmit(evt) {
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
   evt.target.reset();
-  toggleButtonState([cardNameInput, cardLinkInput], cardSubmitBtn);
-  disableButton(cardSubmitBtn, settings);
+  toggleButtonState([cardNameInput, cardLinkInput], cardSubmitBtn, config);
+  disableButton(cardSubmitBtn, config);
   closeModal(cardModal);
 }
 

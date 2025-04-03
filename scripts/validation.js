@@ -61,8 +61,8 @@ const disableButton = (buttonElement) => {
   buttonElement.disabled = true;
 };
 
-const resetValidation = (formElement, config) => {
-  inputList.foreach((input) => {
+const resetValidation = (formElement, inputList, config) => {
+  inputList.forEach((input) => {
     hideInputError(formElement, input, config);
   });
 };
@@ -77,7 +77,7 @@ const setEventListeners = (formElement, config) => {
 
   inputList.forEach((inputElement) => {
     inputElement.addEventListener("input", function () {
-      checkInputValidity(formElement, inputElement);
+      checkInputValidity(formElement, inputElement, config);
       toggleButtonState(inputList, buttonElement, config);
     });
   });
