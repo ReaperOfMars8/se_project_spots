@@ -55,6 +55,10 @@ const previewModalCloseBtn = previewModal.querySelector(
   ".modal__close-btn_type_preview"
 );
 
+const config = {
+  inactiveButtonClass: ".modal__submit-btn_disabled",
+};
+
 //Card elements
 const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards__list");
@@ -90,9 +94,8 @@ function getCardElement(data) {
 }
 
 function closeOverlay(evt) {
-  const openModal = document.querySelector(".modal_opened"); //remember to use dot here to reference that modal_opened is a class name
   if (evt.target.classList.contains("modal")) {
-    closeModal(openModal);
+    closeModal(evt.target);
   }
 }
 
@@ -122,9 +125,6 @@ function handleEditFormSubmit(evt) {
   profileName.textContent = editModalNameInput.value;
   profileDescription.textContent = editModalDescriptionInput.value;
   closeModal(editModal);
-
-  editModalNameInput.value = "";
-  editModalDescriptionInput.value = "";
 }
 
 function handleAddCardSubmit(evt) {
@@ -133,7 +133,6 @@ function handleAddCardSubmit(evt) {
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
   evt.target.reset();
-  toggleButtonState([cardNameInput, cardLinkInput], cardSubmitBtn, config);
   disableButton(cardSubmitBtn, config);
   closeModal(cardModal);
 }
