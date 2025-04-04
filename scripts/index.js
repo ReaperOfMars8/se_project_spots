@@ -55,10 +55,6 @@ const previewModalCloseBtn = previewModal.querySelector(
   ".modal__close-btn_type_preview"
 );
 
-const config = {
-  inactiveButtonClass: ".modal__submit-btn_disabled",
-};
-
 //Card elements
 const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards__list");
@@ -133,7 +129,7 @@ function handleAddCardSubmit(evt) {
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
   evt.target.reset();
-  disableButton(cardSubmitBtn, config);
+  disableButton(cardSubmitBtn, settings);
   closeModal(cardModal);
 }
 
